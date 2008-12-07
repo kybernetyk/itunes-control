@@ -1,0 +1,7 @@
+itunes control (IC) is a simple background tool that lets you control your itunes player over the web.
+
+IC polls in the background a web server for commands and controls itunes.
+
+IC uses the EyeTunes project for wrapping all the ugly carbon apple event stuff.
+
+OS X only :)
