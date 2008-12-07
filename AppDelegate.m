@@ -135,6 +135,10 @@
 	
 }
 
+// the remote point where we can poll our messages
+// make this a preference setting
+#define POLL_MESSAGE_REMOTE_URL "http://localhost:8888/control/poll_message.php"
+
 // the timer's main loop. fetches command from server and processes it
 - (void) handlePollTimer: (NSTimer *) timer
 {
@@ -149,7 +153,7 @@
 	//ok, we're polling now
 	isPolling = YES;
 	
-	NSURL *url = [NSURL URLWithString:@"http://localhost:8888/control/poll_message.php"];
+	NSURL *url = [NSURL URLWithString:@POLL_MESSAGE_REMOTE_URL];
 	NSString *commandString = [NSString stringWithContentsOfURL: url];
 
 	[self processCommandString: commandString];
