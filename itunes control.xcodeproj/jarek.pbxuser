@@ -305,6 +305,8 @@
 			EF247E530EEC7117002FB82F /* PBXTextBookmark */ = EF247E530EEC7117002FB82F /* PBXTextBookmark */;
 			EF247E550EEC719A002FB82F /* PBXTextBookmark */ = EF247E550EEC719A002FB82F /* PBXTextBookmark */;
 			EF247E560EEC719B002FB82F /* PBXTextBookmark */ = EF247E560EEC719B002FB82F /* PBXTextBookmark */;
+			EF247E570EEC748A002FB82F /* PBXTextBookmark */ = EF247E570EEC748A002FB82F /* PBXTextBookmark */;
+			EF247E580EEC749A002FB82F /* PBXTextBookmark */ = EF247E580EEC749A002FB82F /* PBXTextBookmark */;
 		};
 		sourceControlManager = EF31D8BA0EEC101700D1C1C8 /* Source Control */;
 		userBuildSettings = {
@@ -1230,9 +1232,9 @@
 	};
 	EF247D600EEC653B002FB82F /* AppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1193, 3776}}";
-			sepNavSelRange = "{2111, 0}";
-			sepNavVisRange = "{1758, 1053}";
+			sepNavIntBoundsRect = "{{0, 0}, {1193, 3856}}";
+			sepNavSelRange = "{3421, 867}";
+			sepNavVisRange = "{3972, 679}";
 		};
 	};
 	EF247D630EEC6588002FB82F /* PBXTextBookmark */ = {
@@ -2681,6 +2683,26 @@
 		rType = 0;
 		vrLen = 1053;
 		vrLoc = 1758;
+	};
+	EF247E570EEC748A002FB82F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EF247D600EEC653B002FB82F /* AppDelegate.m */;
+		name = "AppDelegate.m: 118";
+		rLen = 0;
+		rLoc = 2111;
+		rType = 0;
+		vrLen = 330;
+		vrLoc = 2527;
+	};
+	EF247E580EEC749A002FB82F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EF247D600EEC653B002FB82F /* AppDelegate.m */;
+		name = "AppDelegate.m: 165";
+		rLen = 867;
+		rLoc = 3421;
+		rType = 0;
+		vrLen = 679;
+		vrLoc = 3972;
 	};
 	EF31D8A80EEC101400D1C1C8 /* itunes control */ = {
 		isa = PBXExecutable;
