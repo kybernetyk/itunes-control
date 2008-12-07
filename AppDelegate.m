@@ -115,9 +115,7 @@
 {
 	NSMenu *menu = [[[NSMenu alloc] initWithTitle:@"menu title"] autorelease];
 	
-	NSMenuItem *menuItem = [[[NSMenuItem alloc] initWithTitle:@"Open Search" action:@selector(reopenWindowByMenu:) keyEquivalent:[NSString string]] autorelease];
-	[menu addItem: menuItem];
-	menuItem = [[[NSMenuItem alloc] initWithTitle:@"Preferences" action:@selector(openPreferences:) keyEquivalent:[NSString string]] autorelease];
+	NSMenuItem *menuItem = [[[NSMenuItem alloc] initWithTitle:@"Preferences" action:@selector(openPreferences:) keyEquivalent:[NSString string]] autorelease];
 	[menu addItem: menuItem];
 	[menu addItem:[NSMenuItem separatorItem]];
 	
