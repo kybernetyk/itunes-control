@@ -13,6 +13,7 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		EF247D350EEC1876002FB82F /* EyeTunes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF247D340EEC1876002FB82F /* EyeTunes.framework */; };
 		EF247D3C0EEC18BA002FB82F /* EyeTunes.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EF247D340EEC1876002FB82F /* EyeTunes.framework */; };
+		EF247D610EEC653B002FB82F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF247D600EEC653B002FB82F /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,8 @@
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* itunes control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "itunes control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF247D340EEC1876002FB82F /* EyeTunes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EyeTunes.framework; sourceTree = "<group>"; };
+		EF247D5F0EEC653B002FB82F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF247D600EEC653B002FB82F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EF247D5F0EEC653B002FB82F /* AppDelegate.h */,
+				EF247D600EEC653B002FB82F /* AppDelegate.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				EF247D610EEC653B002FB82F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,8 +11,6 @@
 
 int main(int argc, char *argv[])
 {
-	EyeTunes *e = [EyeTunes sharedInstance];
-	[e setPlayerVolume: 0];
 	
 	return NSApplicationMain(argc,  (const char **) argv);
 }
