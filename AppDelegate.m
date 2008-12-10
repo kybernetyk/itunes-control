@@ -20,8 +20,6 @@
 	if (isMuted == YES)
 	{
 		isMuted = NO;
-		//[eyetunes setPlayerVolume: previousVolume];		
-		//[self setVolumeIniTunes: previousVolume];
 		
 		[[EyeTunes sharedInstance] setPlayerVolume: previousVolume];
 		
@@ -90,6 +88,8 @@
 												selector: @selector(handlePollTimer:)
 												userInfo: nil
 												repeats: YES];
+
+	[pollTimer retain]; //timer could get autoreleased anytime
 }
 
 
@@ -97,6 +97,7 @@
 - (IBAction) stopPolling: (id) sender
 {
 	[pollTimer invalidate];
+	[pollTimer release];
 }
 
 //quits the application if chosen from the status menu 
