@@ -123,11 +123,11 @@
 	[menu addItemWithTitle:@"Quit" action:@selector(quitAppByMenu:) keyEquivalent:[NSString string]];
 	
 	
-	NSStatusItem *statusItem;
+	
 	NSStatusBar *statusBar = [NSStatusBar systemStatusBar];
 	
-	statusItem = [statusBar statusItemWithLength: 24.0f];
-	[statusItem setTitle:@"iC"];
+	statusItem = [statusBar statusItemWithLength: NSVariableStatusItemLength];
+	[statusItem setTitle:@"♫ ..."];
 	[statusItem setEnabled: YES];
 	[statusItem setHighlightMode: YES];
 	[statusItem setMenu: menu];
@@ -172,9 +172,20 @@
 		return;
 	}
 	
+	//if (commandString)
+	//	[statusItem setTitle: commandString];
+	
+	ETTrack *currentTrack = [[EyeTunes sharedInstance] currentTrack];
+	
+	NSString *displayString = [NSString stringWithFormat:@"♫ %@ - %@", [currentTrack artist], [currentTrack name]];
+	
+	[statusItem setTitle: displayString];
+
+	
+	
 	//don't spam log with "none" :)
 	NSLog(@"chosing action for: %@",commandString);	
-	
+
 	if ([commandString isEqualToString: @"stop"])
 	{
 		[self stopPlayback];

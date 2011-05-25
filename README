@@ -5,3 +5,10 @@ IC polls in the background a web server for commands and controls itunes.
 IC uses the EyeTunes project for wrapping all the ugly carbon apple event stuff.
 
 OS X only :)
+32 bit only, as the used itunes framework is older. you might get it to build on 64bit if you can get the 64bit framework. Or just rewrite it to use the cocoa bridge stuff.
+
+see server/README for info about the server
+
+
+License: GPL
+(c) Leon Szpilewski, 2008

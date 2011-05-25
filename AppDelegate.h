@@ -16,6 +16,8 @@
 	
 	NSTimer *pollTimer;
 	BOOL isPolling;
+	
+	NSStatusItem *statusItem;
 }
 
 #pragma mark -
